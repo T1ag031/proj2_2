@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encomendas</title>
+</head>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    .imgpos{
+        top:0;
+        left: 630px;
+        position: relative;
+    }
+    .txtpos1{
+        left: 620px;
+        position: relative;
+    }
+    .voltarbuttonpos{
+        left: 600px;
+        position: relative;
+        width: 200px;
+        height: 30px;
+        background-color: #77AFFF;
+        border-radius: 5px;
+    }
+</style>
+<body>
+<img src="./assets/viatex.png" width="150" height="150" class="imgpos"></img>
+<h1 class="txtpos1">Encomendas</h1>
+<table id="datatablesSimple">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Data</th>
+        <th>Valor Total</th>
+    </tr>
+    </thead>
+
+    <tr th:each="list : ${ListaProd}">
+        <td th:text="${list.numencomenda}"></td>
+        <td th:text="${list.data}"></td>
+        <td th:text="${list.valortotal}"></td>
+    </tr>
+</table>
+<p></p>
+
+<button class="voltarbuttonpos" onclick="location.href='menucliente'">Voltar</button>
+
+
+</body>
+</html>

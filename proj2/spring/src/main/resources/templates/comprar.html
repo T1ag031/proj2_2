@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprar</title>
+</head>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    .imgpos{
+        top:0;
+        left: 630px;
+        position: relative;
+    }
+    .txtpos1{
+        left: 590px;
+        position: relative;
+    }
+    .inputnpos{
+        left: 425px;
+        position: relative;
+        height: 30px;
+    }
+    .voltarbuttonpos{
+        left: 600px;
+        position: relative;
+        width: 200px;
+        height: 30px;
+        background-color: #77AFFF;
+        border-radius: 5px;
+    }
+</style>
+<body>
+<img src="./assets/viatex.png" width="150" height="150" class="imgpos"></img>
+<h1 class="txtpos1">Realizar Compra</h1>
+
+
+<p></p>
+<label>
+    <input type="text" placeholder="ID Peça" name="idpeca" required size="80" class="inputnpos">
+</label>
+<p></p>
+<label>
+    <input type="text" placeholder="Data" name="date" required size="80" class="inputnpos">
+</label>
+<p></p>
+<label>
+    <input type="text" placeholder="Quantidade" name="qtd" required size="80" class="inputnpos">
+</label>
+<p></p>
+<label>
+    <input type="text" placeholder="Valor Total" name="valor" required size="80" class="inputnpos">
+</label>
+<p></p>
+<button class="voltarbuttonpos">Comprar</button>
+<p></p>
+<button class="voltarbuttonpos" onclick="location.href='menucliente'">Voltar</button>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sessão</title>
+</head>
+<style>
+    .imgpos1{
+        top:0;
+        left:600px;
+        position: relative;
+    }
+    .txtpos1{
+        left: 606px;
+        position: relative;
+    }
+    .input1pos{
+        left: 430px;
+        position: relative;
+        height: 30px;
+    }
+    .input2pos{
+        left: 430px;
+        position: relative;
+        height: 30px;
+
+    }
+    .buttonpos{
+        left: 600px;
+        position: relative;
+        width: 200px;
+        height: 30px;
+        background-color: #77AFFF;
+        border-radius: 5px;
+    }
+    .button2pos{
+        left: 600px;
+        position: relative;
+        width: 200px;
+        height: 30px;
+        background-color: #77AFFF;
+        border-radius: 5px;
+    }
+</style>
+<body>
+<img src="./assets/viatex.png" width="200" height="200" class="imgpos1">
+<h1 class="txtpos1">
+    Iniciar Sessão
+</h1>
+<form action="/logger" method="post">
+<label>
+    <input type="text" placeholder="Username" name="username" required size="80" class="input1pos">
+    <p></p>
+    <input type="password" placeholder="Password" name="password" required size="80" class="input2pos">
+    <p></p>
+</label>
+    <button type="submit" class="buttonpos" name="backbutton" >Iniciar Sessão</button>
+</form>
+<p></p>
+<button type="button" class="button2pos" onclick="location.href='index'">
+    Voltar
+</button>
+</body>
+</html>

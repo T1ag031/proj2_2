@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cliente</title>
+</head>
+<style>
+    .imgpos{
+        top:0;
+        left:585px;
+        position: relative;
+    }
+    .txtpos{
+        left: 620px;
+        position: relative;
+    }
+    .container {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+    }
+
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .button1pos{
+        height: 50px;
+        width: 707px;
+        background-color:  #77AFFF;
+        border-radius: 5px;
+    }
+    .button2pos{
+        height: 50px;
+        width: 707px;
+        background-color:  #77AFFF;
+
+        border-radius: 5px;
+    }
+    .button4pos{
+        height: 50px;
+        width: 1420px;
+        background-color:  #77AFFF;
+
+        border-radius: 5px;
+    }
+
+</style>
+<body>
+<img src="./assets/viatex.png" width="250" height="250" class="imgpos">
+<h1 class="txtpos">Menu Cliente</h1>
+<label>
+    <div class="container">
+        <div class="vertical-center">
+            <button class="button1pos" onclick="location.href='comprar'" >Comprar</button>
+            <button class="button2pos" onclick="location.href='verencomendas'" >Encomendas</button>
+            <p></p>
+            <button class="button4pos" onclick="location.href='index'" >Terminar Sessão</button>
+        </div>
+    </div>
+</label>
+</body>
+</html>
