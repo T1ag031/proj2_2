@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx.clienteComprarcontroller">
+    <children>
+        <TableView layoutX="555.0" layoutY="93.0" prefHeight="419.0" prefWidth="560.0">
+            <columns>
+                <TableColumn prefWidth="90.00885009765625" text="ID Peça" />
+                <TableColumn prefWidth="267.02490234375" text="Nome Peça" />
+                <TableColumn prefWidth="202.47509765625" text="Preço Unitário" />
+            </columns>
+        </TableView>
+        <Pane prefHeight="809.0" prefWidth="463.0" style="-fx-background-color: #77AFFF#77AFFF;">
+            <children>
+                <ImageView fitHeight="225.0" fitWidth="242.0" layoutX="111.0" layoutY="60.0">
+                    <image>
+                        <Image url="@../assets/viatex.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="177.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliente">
+                    <font>
+                        <Font size="42.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="qtdTextField" layoutX="86.0" layoutY="630.0" prefHeight="26.0" prefWidth="303.0" promptText="Quantidade" />
+            <ComboBox fx:id="comboBoxnome" layoutX="86.0" layoutY="547.0" prefWidth="303.0" promptText="Nome Peça" style="-fx-background-color: #FFFFFF;" />
+            </children>
+        </Pane>
+        <Pane layoutX="462.0" layoutY="571.0" prefHeight="239.0" prefWidth="741.0" style="-fx-background-color: #77AFFF#77AFFF;">
+            <children>
+                <Button layoutX="47.0" layoutY="167.0" mnemonicParsing="false" onAction="#voltar" prefHeight="26.0" prefWidth="653.0" style="-fx-background-color: #ffffff;" text="Voltar" />
+                <Button layoutX="47.0" layoutY="83.0" mnemonicParsing="false" onAction="#comprar" prefHeight="26.0" prefWidth="653.0" style="-fx-background-color: #FFFFFF;" text="Realizar Compra" />
+            </children>
+        </Pane>
+        <Text layoutX="562.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peças">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

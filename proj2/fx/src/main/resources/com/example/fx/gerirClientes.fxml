@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="799.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx.gerirclientecontroller">
+    <children>
+        <TableView fx:id="clientes" layoutX="496.0" layoutY="93.0" onMouseClicked="#selectedRow" prefHeight="419.0" prefWidth="681.0">
+            <columns>
+                <TableColumn fx:id="idcol" prefWidth="56.62017822265625" text="ID" />
+                <TableColumn fx:id="nomecol" prefWidth="97.35345458984375" text="Nome" />
+                <TableColumn fx:id="nifpcol" prefWidth="149.2713623046875" text="NIF" />
+                <TableColumn fx:id="ruacol" prefWidth="176.72869873046875" text="Rua" />
+            <TableColumn fx:id="mailcol" prefWidth="199.837158203125" text="E-mail" />
+            </columns>
+        </TableView>
+        <Pane layoutX="-22.0" prefHeight="809.0" prefWidth="463.0" style="-fx-background-color: #77AFFF#77AFFF;">
+            <children>
+                <ImageView fitHeight="225.0" fitWidth="242.0" layoutX="111.0" layoutY="60.0">
+                    <image>
+                        <Image url="@../assets/viatex.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="119.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerir Clientes">
+                    <font>
+                        <Font size="42.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="nomeTextField" layoutX="86.0" layoutY="429.0" prefHeight="26.0" prefWidth="303.0" promptText="Nome" />
+            <TextField fx:id="nifTextField1" layoutX="86.0" layoutY="478.0" prefHeight="26.0" prefWidth="303.0" promptText="NIF" />
+            <TextField fx:id="ruaTextField2" layoutX="86.0" layoutY="574.0" prefHeight="26.0" prefWidth="303.0" promptText="Rua" />
+            <TextField fx:id="emailTextField2" layoutX="86.0" layoutY="526.0" prefHeight="26.0" prefWidth="303.0" promptText="E-mail" />
+            <TextField fx:id="codPostalTextField" layoutX="86.0" layoutY="621.0" prefHeight="26.0" prefWidth="303.0" promptText="Código-Postal" />
+            <TextField fx:id="nPortaTextField" layoutX="86.0" layoutY="670.0" prefHeight="26.0" prefWidth="303.0" promptText="Número de Porta" />
+            <PasswordField fx:id="confirmPasswordField" layoutX="84.0" layoutY="767.0" prefHeight="26.0" prefWidth="303.0" promptText="Password" />
+            <Button layoutX="205.0" layoutY="381.0" mnemonicParsing="false" onAction="#limpar" style="-fx-background-color: #ffffff;" text="Limpar" />
+            <TextField fx:id="userTextField" layoutX="85.0" layoutY="718.0" prefHeight="26.0" prefWidth="303.0" promptText="Username" />
+            </children>
+        </Pane>
+        <Pane layoutX="441.0" layoutY="570.0" prefHeight="239.0" prefWidth="761.0" style="-fx-background-color: #77AFFF#77AFFF;">
+            <children>
+                <Button layoutX="47.0" layoutY="167.0" mnemonicParsing="false" onAction="#voltar" prefHeight="26.0" prefWidth="670.0" style="-fx-background-color: #ffffff;" text="Voltar" />
+                <Button layoutX="47.0" layoutY="83.0" mnemonicParsing="false" onAction="#criar" prefHeight="26.0" prefWidth="323.0" style="-fx-background-color: #FFFFFF;" text="Criar Cliente" />
+            <Button layoutX="395.0" layoutY="83.0" mnemonicParsing="false" onAction="#editar" prefHeight="26.0" prefWidth="323.0" style="-fx-background-color: #FFFFFF;" text="Editar Cliente" />
+            </children>
+        </Pane>
+        <Text layoutX="562.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

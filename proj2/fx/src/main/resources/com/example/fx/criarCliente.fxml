@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx.criarclientecontroller">
+    <children>
+        <Pane prefHeight="800.0" prefWidth="407.0" style="-fx-background-color: #77AFFF;">
+            <children>
+                <ImageView fitHeight="217.0" fitWidth="231.0" layoutX="88.0" layoutY="129.0">
+                    <image>
+                        <Image url="@../assets/viatex.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="138.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RegistarCliente" textAlignment="CENTER" wrappingWidth="131.22998046875">
+                    <font>
+                        <Font size="37.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Button layoutX="471.0" layoutY="713.0" mnemonicParsing="false" onAction="#voltar" prefHeight="25.0" prefWidth="322.0" style="-fx-background-color: #77AFFF;" text="Voltar" />
+        <Button layoutX="814.0" layoutY="713.0" mnemonicParsing="false" onAction="#registar" prefHeight="25.0" prefWidth="322.0" style="-fx-background-color: #77AFFF;" text="Registar" />
+        <TextField fx:id="emailTextField" layoutX="471.0" layoutY="160.0" prefHeight="25.0" prefWidth="665.0" />
+        <TextField fx:id="nomeTextField" layoutX="471.0" layoutY="80.0" prefHeight="25.0" prefWidth="322.0" />
+        <TextField fx:id="nifTextField" layoutX="814.0" layoutY="80.0" prefHeight="25.0" prefWidth="322.0" />
+        <TextField fx:id="ruaTextField" layoutX="471.0" layoutY="240.0" prefHeight="25.0" prefWidth="665.0" />
+        <TextField fx:id="codPostTextfield" layoutX="471.0" layoutY="320.0" prefHeight="26.0" prefWidth="183.0" />
+        <TextField fx:id="nPortaTextField" layoutX="953.0" layoutY="320.0" prefHeight="26.0" prefWidth="183.0" />
+        <TextField fx:id="usernameTextField" layoutX="471.0" layoutY="400.0" prefHeight="25.0" prefWidth="665.0" />
+        <PasswordField fx:id="PasswordField" layoutX="471.0" layoutY="480.0" prefHeight="25.0" prefWidth="665.0" />
+        <PasswordField fx:id="confirmPasswordField" layoutX="471.0" layoutY="560.0" prefHeight="25.0" prefWidth="665.0" />
+        <Text layoutX="473.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="816.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIF">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="473.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="473.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="956.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número da Porta">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="473.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código Postal">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="473.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="473.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="473.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirme a Password">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text fx:id="label" layoutX="717.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obs: não preencha o campo localidade a não ser que seja pedido" wrappingWidth="174.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+        </Text>
+        <TextField fx:id="localidadeTextField" layoutX="712.0" layoutY="320.0" prefHeight="26.0" prefWidth="183.0" />
+        <Text layoutX="712.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localidade">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

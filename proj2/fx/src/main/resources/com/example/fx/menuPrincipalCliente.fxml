@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx.menuprincipalclientecontroller">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="440.0" style="-fx-background-color: #77AFFF#77AFFF;">
+         <children>
+            <ImageView fitHeight="241.0" fitWidth="254.0" layoutX="95.0" layoutY="86.0">
+               <image>
+                  <Image url="@../assets/viatex.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="139.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliente">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Text>
+            <Button alignment="CENTER" layoutX="87.0" layoutY="691.0" mnemonicParsing="false" onAction="#voltar" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #ffffff;" text="                         Terminar Sessão" />
+            <ImageView fitHeight="30.0" fitWidth="37.0" layoutX="110.0" layoutY="699.0">
+               <image>
+                  <Image url="@../assets/exit-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="146.0" layoutY="585.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu Principal">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button alignment="BOTTOM_CENTER" layoutX="576.0" layoutY="60.0" mnemonicParsing="false" onAction="#comprar" prefHeight="149.0" prefWidth="174.0" style="-fx-background-color: #77AFFF#77AFFF #77AFFF#77AFFF;" text="Realizar Compras">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="BOTTOM_CENTER" layoutX="576.0" layoutY="330.0" mnemonicParsing="false" onAction="#editareliminar" prefHeight="149.0" prefWidth="174.0" style="-fx-background-color: #77AFFF#77AFFF #77AFFF#77AFFF;" text="Editar/Eliminar Compras">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="96.0" fitWidth="116.0" layoutX="612.0" layoutY="77.0">
+         <image>
+            <Image url="@../assets/compras-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="122.0" layoutX="603.0" layoutY="344.0">
+         <image>
+            <Image url="@../assets/Edit_icon_(the_Noun_Project_30184).png" />
+         </image>
+      </ImageView>
+      <Button alignment="BOTTOM_CENTER" layoutX="576.0" layoutY="600.0" mnemonicParsing="false" onAction="#comprar" prefHeight="149.0" prefWidth="174.0" style="-fx-background-color: #77AFFF#77AFFF #77AFFF#77AFFF;" text="Pagar Encomenda">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
