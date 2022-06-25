@@ -20,5 +20,6 @@
   <modules>
       <module>bd</module>
       <module>fx</module>
+    <module>spring</module>
   </modules>
 </project>
